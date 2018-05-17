@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">MyBanking</string>
+    <string name="KICB">КИКБ</string>
+    <string name="demir_bank">Демир Банк</string>
+    <string name="kompanion">Компаньон Банк</string>
+    <string name="kbk">Кыргызстан КБ</string>
+    <string name="optima">Оптима Банк</string>
+    <string name="ayil">Айыл Банк</string>
+    <string name="ksb">КШБ</string>
+    <string name="rosin">Росин Банк</string>
+    <string name="bakai">Бакай Банк</string>
+
+    <string name="title_activity_start">Мой Банкинг</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="email">akbekov@gmail.com</string>
+    <string name="nav_header_name">Акбеков Талгат</string>
+    <string name="tools">Tools</string>
+    <string name="communicate">Communicate</string>
+    <string name="slideshow">Slideshow</string>
+    <string name="gallery">Gallery</string>
+    <string name="importCamera">Import</string>
+    <string name="other_action">Прочее</string>
+    <string name="exit">Выход</string>
+</resources>

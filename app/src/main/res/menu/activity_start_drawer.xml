@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_ayil"
+            android:icon="@drawable/ic_dollar_symbol"
+            android:title="@string/ayil" />
+        <item
+            android:id="@+id/nav_bakai"
+            android:icon="@drawable/ic_dollar_symbol"
+            android:title="@string/bakai" />
+        <item
+            android:id="@+id/nav_demir"
+            android:icon="@drawable/ic_dollar_symbol"
+            android:title="@string/demir_bank" />
+        <item
+            android:id="@+id/nav_kicb"
+            android:icon="@drawable/ic_dollar_symbol"
+            android:title="@string/KICB" />
+        <item
+            android:id="@+id/nav_kompanion"
+            android:icon="@drawable/ic_dollar_symbol"
+            android:title="@string/kompanion" />
+        <item
+            android:id="@+id/nav_kbk"
+            android:icon="@drawable/ic_dollar_symbol"
+            android:title="@string/kbk" />
+        <item
+            android:id="@+id/nav_ksb"
+            android:icon="@drawable/ic_dollar_symbol"
+            android:title="@string/ksb" />
+        <item
+            android:id="@+id/nav_optima"
+            android:icon="@drawable/ic_dollar_symbol"
+            android:title="@string/optima" />
+        <item
+            android:id="@+id/nav_rosin"
+            android:icon="@drawable/ic_dollar_symbol"
+            android:title="@string/rosin" />
+    </group>
+
+    <item
+        android:id="@+id/nav_exit"
+        android:icon="@drawable/ic_turn_off"
+        android:title="@string/exit" />
+
+</menu>
