@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\Projects\\Android\\MyBanking\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-v16\\values-v16.xml",
+            "outputFile": "D:\\Projects\\Android\\My Banking\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-v16\\values-v16.xml",
             "map": [
                 {
                     "source": "C:\\Users\\takbekov\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.1.0.aar\\d74b3b4eb9f8999c3a0c64ee271b8a94\\res\\values-v16\\values-v16.xml",

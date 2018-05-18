@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\Projects\\Android\\MyBanking\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-fr-rCA\\values-fr-rCA.xml",
+            "outputFile": "D:\\Projects\\Android\\My Banking\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-fr-rCA\\values-fr-rCA.xml",
             "map": [
                 {
                     "source": "C:\\Users\\takbekov\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\ec42b6473c0e9e0cdab69fa427b40e1d\\res\\values-fr-rCA\\values-fr-rCA.xml",

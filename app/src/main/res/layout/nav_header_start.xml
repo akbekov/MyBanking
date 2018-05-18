@@ -18,8 +18,7 @@
         android:layout_width="119dp"
         android:layout_height="96dp"
         android:contentDescription="@string/nav_header_name"
-        app:srcCompat="@drawable/ic_user"
-        tools:ignore="VectorDrawableCompat" />
+        android:src="@drawable/ic_user" />
 
     <TextView
         android:layout_width="match_parent"

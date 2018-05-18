@@ -1,6 +1,12 @@
 package kg.infocom.takbekov.mybanking;
 
 import android.annotation.SuppressLint;
+import android.app.AlertDialog;
+import android.app.ProgressDialog;
+import android.content.Context;
+import android.content.DialogInterface;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.design.widget.FloatingActionButton;
@@ -97,6 +103,24 @@ public class StartActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
+        if (id == R.id.nav_exit) {
+            finish();
+            System.exit(0);
+        }
+
+        if (!isOnline()) {
+            new AlertDialog.Builder(this)
+                    .setTitle("Ошибка подключения")
+                    .setMessage("Подключитесь к интернету для дальнейшей работы")
+                    .setPositiveButton("Хорошо", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialogInterface, int i) {
+
+                        }
+                    }).show();
+            return false;
+        }
+
         if (id == R.id.nav_demir) {
             setIBank("https://online.demirbank.kg/retail/login?lang=ru");
         } else if (id == R.id.nav_kicb) {
@@ -115,19 +139,31 @@ public class StartActivity extends AppCompatActivity
             setIBank("https://my.rib.kg/login.html");
         } else if (id == R.id.nav_bakai) {
             setIBank("https://i.bakai.kg/");
-        } else if (id == R.id.nav_exit) {
-            finish();
-            System.exit(0);
         }
-
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
 
+    public boolean isOnline() {
+        ConnectivityManager cm =
+                (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+        if (cm != null) {
+            NetworkInfo netInfo = cm.getActiveNetworkInfo();
+            return netInfo != null && netInfo.isConnectedOrConnecting();
+        } else return false;
+    }
+
     @SuppressLint("SetJavaScriptEnabled")
     private void setIBank(String url) {
+        final ProgressDialog dialog = new ProgressDialog(this);
+        dialog.setProgressStyle(ProgressDialog.STYLE_SPINNER);
+        dialog.setMessage("Идет загрузка страницы..");
+        dialog.setIndeterminate(true);
+        dialog.setCanceledOnTouchOutside(false);
+        dialog.show();
+
         webView.getSettings().setJavaScriptEnabled(true);
         webView.loadUrl(url);
 
@@ -137,6 +173,11 @@ public class StartActivity extends AppCompatActivity
             public boolean shouldOverrideUrlLoading(WebView view, String url) {
                 view.loadUrl(url);
                 return true;
+            }
+
+            @Override
+            public void onPageFinished(WebView view, String url) {
+                dialog.dismiss();
             }
         });
     }

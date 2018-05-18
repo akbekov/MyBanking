@@ -106,27 +106,31 @@ MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\takbekov\.gradle\cac
 	android:theme
 		ADDED from D:\Projects\Android\My Banking\app\src\main\AndroidManifest.xml:18:9-40
 activity#kg.infocom.takbekov.mybanking.MainActivity
-ADDED from D:\Projects\Android\My Banking\app\src\main\AndroidManifest.xml:19:9-20:20
+ADDED from D:\Projects\Android\My Banking\app\src\main\AndroidManifest.xml:19:9-59
 	android:name
 		ADDED from D:\Projects\Android\My Banking\app\src\main\AndroidManifest.xml:19:19-47
 activity#kg.infocom.takbekov.mybanking.StartActivity
-ADDED from D:\Projects\Android\My Banking\app\src\main\AndroidManifest.xml:21:9-30:20
+ADDED from D:\Projects\Android\My Banking\app\src\main\AndroidManifest.xml:20:9-29:20
 	android:label
-		ADDED from D:\Projects\Android\My Banking\app\src\main\AndroidManifest.xml:23:13-57
+		ADDED from D:\Projects\Android\My Banking\app\src\main\AndroidManifest.xml:22:13-57
 	android:theme
-		ADDED from D:\Projects\Android\My Banking\app\src\main\AndroidManifest.xml:24:13-56
+		ADDED from D:\Projects\Android\My Banking\app\src\main\AndroidManifest.xml:23:13-56
 	android:name
-		ADDED from D:\Projects\Android\My Banking\app\src\main\AndroidManifest.xml:22:13-42
+		ADDED from D:\Projects\Android\My Banking\app\src\main\AndroidManifest.xml:21:13-42
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from D:\Projects\Android\My Banking\app\src\main\AndroidManifest.xml:25:13-29:29
+ADDED from D:\Projects\Android\My Banking\app\src\main\AndroidManifest.xml:24:13-28:29
 action#android.intent.action.MAIN
-ADDED from D:\Projects\Android\My Banking\app\src\main\AndroidManifest.xml:26:17-69
+ADDED from D:\Projects\Android\My Banking\app\src\main\AndroidManifest.xml:25:17-69
 	android:name
-		ADDED from D:\Projects\Android\My Banking\app\src\main\AndroidManifest.xml:26:25-66
+		ADDED from D:\Projects\Android\My Banking\app\src\main\AndroidManifest.xml:25:25-66
 category#android.intent.category.LAUNCHER
-ADDED from D:\Projects\Android\My Banking\app\src\main\AndroidManifest.xml:28:17-77
+ADDED from D:\Projects\Android\My Banking\app\src\main\AndroidManifest.xml:27:17-77
 	android:name
-		ADDED from D:\Projects\Android\My Banking\app\src\main\AndroidManifest.xml:28:27-74
+		ADDED from D:\Projects\Android\My Banking\app\src\main\AndroidManifest.xml:27:27-74
+activity#kg.infocom.takbekov.mybanking.FeedbackActivity
+ADDED from D:\Projects\Android\My Banking\app\src\main\AndroidManifest.xml:30:9-63
+	android:name
+		ADDED from D:\Projects\Android\My Banking\app\src\main\AndroidManifest.xml:30:19-51
 uses-sdk
 INJECTED from D:\Projects\Android\My Banking\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\Projects\Android\My Banking\app\src\main\AndroidManifest.xml
