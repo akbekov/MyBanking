@@ -26,4 +26,6 @@
     <string name="importCamera">Import</string>
     <string name="other_action">Прочее</string>
     <string name="exit">Выход</string>
+    <string name="btn_back">Назад</string>
+    <string name="btn_forward">Вперед</string>
 </resources>
